@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7a34f5-1553-4ea5-bdc5-23e2388fa286" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/apps/jDigitalClock/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jDigitalClock/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/jDigitalClock/src/main/java/org/blobst/ClockUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jDigitalClock/src/main/java/org/blobst/ClockUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/jDigitalClock/src/main/java/org/blobst/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jDigitalClock/src/main/java/org/blobst/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0b7a34f5-1553-4ea5-bdc5-23e2388fa286" name="Changes" comment="Monorepo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +17,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7,
@@ -44,7 +41,7 @@
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -62,7 +59,31 @@
       <option name="presentableId" value="Default" />
       <updated>1739372966820</updated>
     </task>
+    <task id="LOCAL-00001" summary="Monorepo">
+      <option name="closed" value="true" />
+      <created>1774012786919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774012786919</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Monorepo">
+      <option name="closed" value="true" />
+      <created>1774012961566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774012961566</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/apps/jDigitalClock" />
+    </ignored-roots>
+    <MESSAGE value="Monorepo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monorepo" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
