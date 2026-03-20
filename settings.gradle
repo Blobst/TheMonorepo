@@ -6,4 +6,4 @@
  */
 
 rootProject.name = 'dev'
-include 'apps:jDigitalClock'
+include 'apps:jDigitalClock', 'apps:Calculator'
