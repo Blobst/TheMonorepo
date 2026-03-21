@@ -1,37 +1,83 @@
 package io.github.blobst.calculator;
 
-import java.util.Scanner;
+import com.raylib.Rectangle;
+
+import static com.raylib.Raylib.*;
 
 public class Main {
 	static void main() {
-		Scanner sc = new Scanner(System.in);
+		int screenWidth = 800;
+		int screenHeight = 600;
+		initWindow(screenWidth, screenHeight, "Calculator");
+		setTargetFPS(60);
 
-		System.out.print("Enter a number: ");
-		int a = sc.nextInt();
+		int rows = 3;
+		int cols = 3;
+		int buttonWidth = 150;
+		int buttonHeight = 80;
+		int spacing = 20;
 
-		System.out.print("\r\033[2K");
-		System.out.print("Enter a operator: ");
-		String op = sc.next();
+		// Center grid
+		int startX = (screenWidth - (cols * buttonWidth + (cols - 1) * spacing)) / 2;
+		int startY = (screenHeight - (rows * buttonHeight + (rows - 1) * spacing)) / 2;
 
-		System.out.print("\r\033[2K");
-		System.out.print("Enter a number: ");
-		int b = sc.nextInt();
-
-		int result = switch (op) {
-			case "+" -> a + b;
-			case "-" -> a - b;
-			case "*" -> a * b;
-			case "/" -> {
-				try {
-					yield a / b;
-				} catch (ArithmeticException e) {
-					System.out.println(e.getMessage());
-					yield 0;
-				}
+		// Create buttons
+		Button[][] numbers = new Button[rows][cols];
+		for (int r = 0; r < rows; r++) {
+			for (int c = 0; c < cols; c++) {
+				int x = startX + c * (buttonWidth + spacing);
+				int y = startY + r * (buttonHeight + spacing);
+				numbers[r][c] = new Button(x, y, buttonWidth, buttonHeight, "" + (r * cols + c + 1));
 			}
-			default -> throw new ArithmeticException("Not a valid operation");
+		}
+
+		Button[][] operations = new Button[rows][cols];
+		String[][] ops = {
+				{"+", "-", "*"},
+				{"/", "=", "C"},
+				{"", "", ""}
 		};
 
-		System.out.println("Result: " + result);
+		for (int r = 0; r < rows; r++) {
+			for (int c = 0; c < cols; c++) {
+				int x = startX + c * (buttonWidth + spacing);
+				int y = startY + r * (buttonHeight + spacing);
+
+				operations[r][c] = new Button(x, y, buttonWidth, buttonHeight, ops[r][c]);
+			}
+		}
+		String clickedText = "";
+
+		while (!windowShouldClose()) {
+			beginDrawing();
+			clearBackground(RAYWHITE);
+
+			Rectangle textBox = new Rectangle(10, 10, 200, 100);
+
+			drawRectangleRec(textBox, GRAY);
+
+			// Draw buttons and check clicks
+			for (int r = 0; r < rows; r++) {
+				for (int c = 0; c < cols; c++) {
+					Button btn = numbers[r][c];
+					Button op = operations[r][c];
+					btn.draw();
+					op.draw();
+					if (btn.isClicked()) {
+						clickedText = btn.getText();
+					}
+					if (op.isClicked()) {
+						clickedText += op.getText();
+					}
+				}
+			}
+
+			if (!clickedText.isEmpty()) {
+				drawText(clickedText, (int) (textBox.x() + 10), (int) (textBox.y() + 10), 20, WHITE);
+			}
+			endDrawing();
+		}
+
+		closeWindow();
 	}
 }

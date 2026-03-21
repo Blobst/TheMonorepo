@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b7a34f5-1553-4ea5-bdc5-23e2388fa286" name="Changes" comment="Added Calculator">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0b7a34f5-1553-4ea5-bdc5-23e2388fa286" name="Changes" comment="i am big braining ngl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/Calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/Calculator/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/Calculator/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,19 +68,6 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="dev" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="dev" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -124,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774016327434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="i am big braining ngl">
+      <option name="closed" value="true" />
+      <created>1774017147267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774017147267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,7 +124,8 @@
     </ignored-roots>
     <MESSAGE value="Monorepo" />
     <MESSAGE value="Added Calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Calculator" />
+    <MESSAGE value="i am big braining ngl" />
+    <option name="LAST_COMMIT_MESSAGE" value="i am big braining ngl" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
